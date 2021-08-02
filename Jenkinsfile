@@ -9,8 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''mvn help:effective-pom
-mvn -B -DskipTests clean package'''
+        sh 'mvn -B -DskipTests clean package'
       }
     }
 
